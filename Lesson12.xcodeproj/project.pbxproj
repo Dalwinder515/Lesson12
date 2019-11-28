@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		3FDA3D2C238F4422006A6EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA3D2B238F4422006A6EB4 /* AppDelegate.swift */; };
-		3FDA3D2E238F4422006A6EB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA3D2D238F4422006A6EB4 /* ViewController.swift */; };
+		3FDA3D2E238F4422006A6EB4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA3D2D238F4422006A6EB4 /* RootViewController.swift */; };
 		3FDA3D31238F4422006A6EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDA3D2F238F4422006A6EB4 /* Main.storyboard */; };
 		3FDA3D33238F4423006A6EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDA3D32238F4423006A6EB4 /* Assets.xcassets */; };
 		3FDA3D36238F4423006A6EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDA3D34238F4423006A6EB4 /* LaunchScreen.storyboard */; };
+		3FDA3D3E238F4BAC006A6EB4 /* FavouritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA3D3D238F4BAC006A6EB4 /* FavouritesList.swift */; };
+		3FDA3D41238F510C006A6EB4 /* singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA3D3F238F510C006A6EB4 /* singleton.cpp */; };
+		3FDA3D43238F62FD006A6EB4 /* FontListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA3D42238F62FD006A6EB4 /* FontListTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FDA3D28238F4422006A6EB4 /* Lesson12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDA3D2B238F4422006A6EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FDA3D2D238F4422006A6EB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FDA3D2D238F4422006A6EB4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3FDA3D30238F4422006A6EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FDA3D32238F4423006A6EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FDA3D35238F4423006A6EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FDA3D37238F4423006A6EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FDA3D3D238F4BAC006A6EB4 /* FavouritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesList.swift; sourceTree = "<group>"; };
+		3FDA3D3F238F510C006A6EB4 /* singleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = singleton.cpp; sourceTree = "<group>"; };
+		3FDA3D40238F510C006A6EB4 /* singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = singleton.hpp; sourceTree = "<group>"; };
+		3FDA3D42238F62FD006A6EB4 /* FontListTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontListTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +62,15 @@
 			isa = PBXGroup;
 			children = (
 				3FDA3D2B238F4422006A6EB4 /* AppDelegate.swift */,
-				3FDA3D2D238F4422006A6EB4 /* ViewController.swift */,
+				3FDA3D2D238F4422006A6EB4 /* RootViewController.swift */,
 				3FDA3D2F238F4422006A6EB4 /* Main.storyboard */,
 				3FDA3D32238F4423006A6EB4 /* Assets.xcassets */,
 				3FDA3D34238F4423006A6EB4 /* LaunchScreen.storyboard */,
 				3FDA3D37238F4423006A6EB4 /* Info.plist */,
+				3FDA3D3D238F4BAC006A6EB4 /* FavouritesList.swift */,
+				3FDA3D3F238F510C006A6EB4 /* singleton.cpp */,
+				3FDA3D40238F510C006A6EB4 /* singleton.hpp */,
+				3FDA3D42238F62FD006A6EB4 /* FontListTableTableViewController.swift */,
 			);
 			path = Lesson12;
 			sourceTree = "<group>";
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					3FDA3D27238F4422006A6EB4 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -135,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FDA3D2E238F4422006A6EB4 /* ViewController.swift in Sources */,
+				3FDA3D2E238F4422006A6EB4 /* RootViewController.swift in Sources */,
+				3FDA3D41238F510C006A6EB4 /* singleton.cpp in Sources */,
+				3FDA3D3E238F4BAC006A6EB4 /* FavouritesList.swift in Sources */,
 				3FDA3D2C238F4422006A6EB4 /* AppDelegate.swift in Sources */,
+				3FDA3D43238F62FD006A6EB4 /* FontListTableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = Lesson12/Info.plist;
@@ -291,6 +307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.Lesson12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = Lesson12/Info.plist;
